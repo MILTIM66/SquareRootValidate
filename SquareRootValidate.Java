@@ -1,7 +1,7 @@
 /*
 Name: square root validate
 Purpose: get the square root of a number inputed.
-Date: 2019-11-10
+Date: 2019-22-10
 Author: Tanner Kennedy
 */
 
@@ -13,21 +13,18 @@ public class SquareRootValidate
     {
 	BufferedReader keyboardInput = new BufferedReader (new InputStreamReader (System.in));
 
-	System.err.print ("Please enter a number you would like to square root ");
+	System.err.print ("Enter a number: ");
 	double number = Double.parseDouble (keyboardInput.readLine ());
-	if (number <= 0)
-
+	
+	while (number <= 0)
 	    {
-		System.out.println (" UNDEFINED");
+		System.out.println ("You must enter a non-negative number!");
 	    }
-
-	else
-	{
-	    double squareRoot = Math.sqrt (number);
-	    //Displaying the number and square root
-	    System.out.println ("number : " + number);
-	    System.out.println (squareRoot);
-	}
+	if number > 0
+	    {
+		double squareRoot = Math.sqrt (number)
+	    	System.out.println (squareRoot);
+	    }
 
     }
 }
