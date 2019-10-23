@@ -19,6 +19,9 @@ public class SquareRootValidate
 	while (number <= 0)
 	    {
 		System.out.println ("You must enter a non-negative number!");
+		
+		System.err.print ("Enter a number: ");
+		double number = Double.parseDouble (keyboardInput.readLine ());
 	    }
 	if number > 0
 	    {
