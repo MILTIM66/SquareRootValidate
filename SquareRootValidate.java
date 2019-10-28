@@ -25,7 +25,7 @@ public class SquareRootValidate
         
         if (number > 0)
         {
-            float squareRoot = Math.sqrt (number);
+            int squareRoot = Math.sqrt (number);
             System.out.println (squareRoot);
         }
     }
