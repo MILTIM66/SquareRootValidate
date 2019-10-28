@@ -22,9 +22,10 @@ public class SquareRootValidate
             System.err.print ("Enter a number: ");
             number = Integer.parseInt (keyboardInput.readLine ());
         }
+        
         if (number > 0)
         {
-            double squareRoot = Math.sqrt (number);
+            float squareRoot = Math.sqrt (number);
             System.out.println (squareRoot);
         }
     }
