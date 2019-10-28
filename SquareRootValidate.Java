@@ -12,7 +12,6 @@ public class SquareRootValidate
     public static void main (String[] args) throws IOException
     {
         BufferedReader keyboardInput = new BufferedReader (new InputStreamReader (System.in));
-
         System.err.print ("Enter a number: ");
         int number = Integer.parseInt (keyboardInput.readLine ());
         
@@ -25,7 +24,8 @@ public class SquareRootValidate
              
             }
             while (number <= 0);
-        if (number > 0)
+            
+            if (number > 0)
             {
                 double squareRoot = Math.sqrt (number);
                 System.out.println (squareRoot);
